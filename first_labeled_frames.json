@@ -1,0 +1,214 @@
+{
+  "PTZ/continuousPan": {
+    "index": 599,
+    "filename": "gt000600.png"
+  },
+  "PTZ/intermittentPan": {
+    "index": 1199,
+    "filename": "gt001200.png"
+  },
+  "PTZ/twoPositionPTZCam": {
+    "index": 817,
+    "filename": "gt000818.png"
+  },
+  "PTZ/zoomInZoomOut": {
+    "index": 499,
+    "filename": "gt000500.png"
+  },
+  "badWeather/blizzard": {
+    "index": 899,
+    "filename": "gt000900.png"
+  },
+  "badWeather/skating": {
+    "index": 799,
+    "filename": "gt000800.png"
+  },
+  "badWeather/snowFall": {
+    "index": 799,
+    "filename": "gt000800.png"
+  },
+  "badWeather/wetSnow": {
+    "index": 499,
+    "filename": "gt000500.png"
+  },
+  "baseline/PETS2006": {
+    "index": 299,
+    "filename": "gt000300.png"
+  },
+  "baseline/highway": {
+    "index": 469,
+    "filename": "gt000470.png"
+  },
+  "baseline/office": {
+    "index": 581,
+    "filename": "gt000582.png"
+  },
+  "baseline/pedestrians": {
+    "index": 301,
+    "filename": "gt000302.png"
+  },
+  "cameraJitter/badminton": {
+    "index": 799,
+    "filename": "gt000800.png"
+  },
+  "cameraJitter/boulevard": {
+    "index": 795,
+    "filename": "gt000796.png"
+  },
+  "cameraJitter/sidewalk": {
+    "index": 799,
+    "filename": "gt000800.png"
+  },
+  "cameraJitter/traffic": {
+    "index": 951,
+    "filename": "gt000952.png"
+  },
+  "dynamicBackground/boats": {
+    "index": 1931,
+    "filename": "gt001932.png"
+  },
+  "dynamicBackground/canoe": {
+    "index": 839,
+    "filename": "gt000840.png"
+  },
+  "dynamicBackground/fall": {
+    "index": 999,
+    "filename": "gt001000.png"
+  },
+  "dynamicBackground/fountain01": {
+    "index": 675,
+    "filename": "gt000676.png"
+  },
+  "dynamicBackground/fountain02": {
+    "index": 655,
+    "filename": "gt000656.png"
+  },
+  "dynamicBackground/overpass": {
+    "index": 2331,
+    "filename": "gt002332.png"
+  },
+  "intermittentObjectMotion/abandonedBox": {
+    "index": 2449,
+    "filename": "gt002450.png"
+  },
+  "intermittentObjectMotion/parking": {
+    "index": 1105,
+    "filename": "gt001106.png"
+  },
+  "intermittentObjectMotion/sofa": {
+    "index": 499,
+    "filename": "gt000500.png"
+  },
+  "intermittentObjectMotion/streetLight": {
+    "index": 179,
+    "filename": "gt000180.png"
+  },
+  "intermittentObjectMotion/tramstop": {
+    "index": 1319,
+    "filename": "gt001320.png"
+  },
+  "intermittentObjectMotion/winterDriveway": {
+    "index": 999,
+    "filename": "gt001000.png"
+  },
+  "lowFramerate/port_0_17fps": {
+    "index": 1073,
+    "filename": "gt001074.png"
+  },
+  "lowFramerate/tramCrossroad_1fps": {
+    "index": 400,
+    "filename": "gt000401.png"
+  },
+  "lowFramerate/tunnelExit_0_35fps": {
+    "index": 1999,
+    "filename": "gt002000.png"
+  },
+  "lowFramerate/turnpike_0_5fps": {
+    "index": 799,
+    "filename": "gt000800.png"
+  },
+  "nightVideos/bridgeEntry": {
+    "index": 999,
+    "filename": "gt001000.png"
+  },
+  "nightVideos/busyBoulvard": {
+    "index": 739,
+    "filename": "gt000740.png"
+  },
+  "nightVideos/fluidHighway": {
+    "index": 399,
+    "filename": "gt000400.png"
+  },
+  "nightVideos/streetCornerAtNight": {
+    "index": 856,
+    "filename": "gt000857.png"
+  },
+  "nightVideos/tramStation": {
+    "index": 499,
+    "filename": "gt000500.png"
+  },
+  "nightVideos/winterStreet": {
+    "index": 899,
+    "filename": "gt000900.png"
+  },
+  "shadow/backdoor": {
+    "index": 1359,
+    "filename": "gt001360.png"
+  },
+  "shadow/bungalows": {
+    "index": 345,
+    "filename": "gt000346.png"
+  },
+  "shadow/busStation": {
+    "index": 299,
+    "filename": "gt000300.png"
+  },
+  "shadow/copyMachine": {
+    "index": 499,
+    "filename": "gt000500.png"
+  },
+  "shadow/cubicle": {
+    "index": 1131,
+    "filename": "gt001132.png"
+  },
+  "shadow/peopleInShade": {
+    "index": 266,
+    "filename": "gt000267.png"
+  },
+  "thermal/corridor": {
+    "index": 568,
+    "filename": "gt000569.png"
+  },
+  "thermal/diningRoom": {
+    "index": 718,
+    "filename": "gt000719.png"
+  },
+  "thermal/lakeSide": {
+    "index": 1040,
+    "filename": "gt001041.png"
+  },
+  "thermal/library": {
+    "index": 856,
+    "filename": "gt000857.png"
+  },
+  "thermal/park": {
+    "index": 249,
+    "filename": "gt000250.png"
+  },
+  "turbulence/turbulence0": {
+    "index": 999,
+    "filename": "gt001000.png"
+  },
+  "turbulence/turbulence1": {
+    "index": 1199,
+    "filename": "gt001200.png"
+  },
+  "turbulence/turbulence2": {
+    "index": 591,
+    "filename": "gt000591.png"
+  },
+  "turbulence/turbulence3": {
+    "index": 805,
+    "filename": "gt000805.png"
+  }
+}

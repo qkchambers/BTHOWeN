@@ -48,6 +48,11 @@ class Discriminator:
         for idx, inp in enumerate(filter_inputs):
             self.filters[idx].add_member(inp)
 
+    def remove(self, xv):
+        filter_inputs = xv.reshape(self.num_filters, -1)
+        for idx, inp in enumerate(filter_inputs):
+            self.filters[idx].remove_member(inp)
+
     # Performs an inference to generate a response (number of filters which return True)
     # Inputs:
     #  xv: A vector of boolean values representing the input sample
@@ -58,6 +63,8 @@ class Discriminator:
         for idx, inp in enumerate(filter_inputs):
             response += int(self.filters[idx].check_membership(inp))
         return response
+    
+
     
     # Sets the bleaching value for all filters
     # See the BloomFilter implementation for more information on what this means
@@ -97,16 +104,21 @@ class WiSARD:
         xv = np.pad(xv, (0, self.pad_zeros))[self.input_order] # Reorder input
         self.discriminators[label].train(xv)
 
+    def remove(self, xv, label):
+        xv = np.pad(xv, (0, self.pad_zeros))[self.input_order]
+        self.discriminators[label].remove(xv)
+
     # Performs an inference with the provided input
     # Passes the input through all discriminators, and returns the one or more with the maximal response
     # Inputs:
     #  xv: A vector of boolean values representing the input sample
     # Returns: A vector containing the indices of the discriminators with maximal response
-    def predict(self, xv):
+    def predict(self, xv, idx):
         xv = np.pad(xv, (0, self.pad_zeros))[self.input_order] # Reorder input
-        responses = np.array([d.predict(xv) for d in self.discriminators], dtype=int)
-        max_response = responses.max()
-        return np.where(responses == max_response)[0]
+        # responses = np.array([d.predict(xv) for d in self.discriminators], dtype=int)
+        response = self.discriminators[idx].predict(xv)
+        #max_response = responses.max()
+        return response #np.where(responses == max_response)[0]
 
     # Sets the bleaching value for all filters
     # See the BloomFilter implementation for more information on what this means

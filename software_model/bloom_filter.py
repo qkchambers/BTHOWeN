@@ -75,6 +75,21 @@ class BloomFilter:
     def add_member(self, xv):
         BloomFilter.__add_member(xv, self.hash_values, self.data)
 
+    @staticmethod
+    @jit(nopython=True)
+    def __remove_member(xv, hash_values, data):
+        hash_results = h3_hash(xv, hash_values)
+        least_entry = data[hash_results].min()  # How many times the entry has been seen
+
+        # Only decrement bins that currently hold the least_entry
+        decrement_mask = data[hash_results] == least_entry
+        data[hash_results] -= decrement_mask.astype(data.dtype)
+
+        
+    def remove_member(self, xv):
+        BloomFilter.__remove_member(xv, self.hash_values, self.data)
+
+
     # Set the bleaching threshold, which is used to exclude members which have not possibly been seen at least b times
     # Inputs:
     #  bleach: The new value for b
