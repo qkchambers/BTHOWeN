@@ -1,4 +1,8 @@
 # BTHOWeN
+This is a fork of BTHOWeN used for change detection on the CDNET 2014 dataset. 
+
+
+
 Code to accompany the paper:
 
 **Weightless Neural Networks for Efficient Edge Inference**, Zachary Susskind, Aman Arora, Igor Dantas Dos Santos Miranda, Luis Armando Quintanilla Villon, Rafael Fontella Katopodis, Leandro Santiago de Araújo, Diego Leonel Cadette Dutra, Priscila Lima, Felipe Maia Galvão França, Mauricio Breternitz Jr., Lizy John
